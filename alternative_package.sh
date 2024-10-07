@@ -15,7 +15,7 @@ if ((replace_name)); then
     name_replace="$2"
 else
     name_add="$2"
-    name_replace="SchildiChat.$name_add"
+    name_replace="$name_add"
 fi
 
 source "$mydir/merge_helpers.sh"
