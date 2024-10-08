@@ -15,7 +15,7 @@ if ((replace_name)); then
     name_replace="$2"
 else
     name_add="$2"
-    name_replace="SchildiChat.$name_add"
+    name_replace="$name_add"
 fi
 
 source "$mydir/merge_helpers.sh"
@@ -25,7 +25,7 @@ if [ -z "$package_add" ] || [ -z "$name_replace" ]; then
     exit 1
 fi
 
-require_clean_git
+#require_clean_git
 
 build_gradle="$mydir/vector-app/build.gradle"
 src_dir="$mydir/vector/src"
@@ -43,10 +43,10 @@ logo_replace_color() {
     local color_shell_dark="$3"
     local color_bg="$4"
     # shell color
-    sed -i "s|#8BC34A|$color_shell|gi" "$file"
-    sed -i "s|#33691E|$color_shell_dark|gi" "$file"
+    sed -i '' "s|#8BC34A|$color_shell|g" "$file"
+    sed -i '' "s|#33691E|$color_shell_dark|g" "$file"
     # bg color
-    sed -i "s|#e2f0d2|$color_bg|gi" "$file"
+    sed -i '' "s|#e2f0d2|$color_bg|g" "$file"
 }
 
 logo_alternative() {
@@ -98,10 +98,9 @@ case "$package_add" in
     ;;
 esac
 
-sed -i "s|\"SchildiChat|\"$name_replace|g" "$build_gradle"
-sed -i "s|de.spiritcroc.riotx|de.spiritcroc.riotx.$package_add|g" "$build_gradle" `find "$app_src_dir" -name google-services.json` `find "$src_dir" -name shortcuts.xml`
-sed -i "s|SchildiChat|$name_replace|g" `find "$fastlane_dir/metadata/android" -name "title.txt"`
-
+sed -i '' "s|\"SchildiChat|\"$name_replace|g" "$build_gradle"
+sed -i '' "s|de.spiritcroc.riotx|de.spiritcroc.riotx.$package_add|g" "$build_gradle" $(find "$app_src_dir" -name google-services.json) $(find "$src_dir" -name shortcuts.xml)
+find "$fastlane_dir/metadata/android" -name "title.txt" -exec sed -i '' "s|SchildiChat|$name_replace|g" {} +
 
 if [ "$package_add" = "testing.foss" ]; then
     find "$fastlane_dir" -name full_description.txt -exec cp "$fastlane_dir/../fastlane_alternatives/testing_foss_full_description.txt" '{}' \;
@@ -119,5 +118,5 @@ elif [ "$package_add" = "fcm" ]; then
     find "$fastlane_dir" -name short_description.txt -exec cp "$fastlane_dir/../fastlane_alternatives/fcm_short_description.txt" '{}' \;
 fi
 
-git add -A
-git commit -m "Switch to alternative $name_replace ($package_add)"
+#git add -A
+#git commit -m "Switch to alternative $name_replace ($package_add)"
