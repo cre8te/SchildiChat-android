@@ -495,6 +495,7 @@ object ThemeUtils {
                     "lava" -> R.style.AppTheme_SC_Dark_Lava
                     "blue" -> R.style.AppTheme_SC_Dark_Blue
                     "greendark" -> R.style.AppTheme_SC_Dark_GreenDark
+                    "syllable" -> R.style.AppTheme_SC_Dark_Syllable
                     // Do not change this comment for automatic dark theme insertion
                     else -> resId
                 }
@@ -545,6 +546,7 @@ object ThemeUtils {
                     "lava" -> R.style.AppTheme_SC_Dark_Colored_Lava
                     "blue" -> R.style.AppTheme_SC_Dark_Colored_Blue
                     "greendark" -> R.style.AppTheme_SC_Dark_Colored_GreenDark
+                    "syllable" -> R.style.AppTheme_SC_Dark_Colored_Syllable
                     // Do not change this comment for automatic dark colored theme insertion
                     else -> resId
                 }

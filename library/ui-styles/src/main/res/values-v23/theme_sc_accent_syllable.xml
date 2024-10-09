@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.SC.Syllable.v23" parent="AppTheme.Base.SC.Syllable">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme.SC.Dark.Syllable.v23" parent="AppTheme.Base.SC.Dark.Syllable">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme.SC.Colored.Syllable.v23" parent="AppTheme.Base.SC.Colored.Syllable">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme.SC.Dark.Colored.Syllable.v23" parent="AppTheme.Base.SC.Dark.Colored.Syllable">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme.SC.Syllable" parent="AppTheme.SC.Syllable.v23"/>
+
+    <style name="AppTheme.SC.Dark.Syllable" parent="AppTheme.SC.Dark.Syllable.v23"/>
+
+    <style name="AppTheme.SC.Colored.Syllable" parent="AppTheme.SC.Colored.Syllable.v23"/>
+
+    <style name="AppTheme.SC.Dark.Colored.Syllable" parent="AppTheme.SC.Dark.Colored.Syllable.v23"/>
+
+</resources>

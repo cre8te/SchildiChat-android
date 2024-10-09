@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- COLORS -->
+
+    <color name="accent_sc_dark_Syllable">#3E4A66</color>
+    <color name="accent_sc_dark_Syllable_alpha25">#3E4A66BD</color>
+    <color name="accent_sc_dark_Syllable_pale">@color/accent_sc_dark_Syllable</color>
+    <color name="accent_sc_dark_Syllable_dark">@color/accent_sc_dark_Syllable_alpha25</color>
+
+
+    <!-- STYLES -->
+
+    <style name="Vector.BottomSheet.SC.Syllable">
+        <item name="android:colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="colorAccent">@color/accent_sc_dark_Syllable</item>
+    </style>
+
+
+    <!-- THEMES -->
+
+    <style name="AppTheme.Base.SC.Syllable">
+        <item name="vctr_reaction_background_on">@color/accent_sc_dark_Syllable_dark</item>
+        <item name="colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="android:colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="colorAccentPale">@color/accent_sc_dark_Syllable_pale</item>
+        <item name="message_highlight_bg_color">@color/accent_sc_dark_Syllable_alpha25</item>
+        <item name="bottomSheetDialogTheme">@style/Vector.BottomSheet.SC.Syllable</item>
+        <item name="vctr_presence_indicator_online">?colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Base.SC.Dark.Syllable">
+        <item name="vctr_reaction_background_on">@color/accent_sc_dark_Syllable_dark</item>
+        <item name="colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="android:colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="colorAccentPale">@color/accent_sc_dark_Syllable_pale</item>
+        <item name="message_highlight_bg_color">@color/accent_sc_dark_Syllable_alpha25</item>
+        <item name="bottomSheetDialogTheme">@style/Vector.BottomSheet.SC.Syllable</item>
+        <item name="vctr_presence_indicator_online">?colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Base.SC.Colored.Syllable">
+        <item name="vctr_reaction_background_on">@color/accent_sc_dark_Syllable_dark</item>
+        <item name="colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="android:colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="colorAccentPale">@color/accent_sc_dark_Syllable_pale</item>
+        <item name="bottomSheetDialogTheme">@style/Vector.BottomSheet.SC.Syllable</item>
+        <item name="vctr_presence_indicator_online">?colorAccent</item>
+
+        <item name="sc_message_bg_outgoing">@color/accent_sc_dark_Syllable_alpha25</item>
+    </style>
+
+    <style name="AppTheme.Base.SC.Dark.Colored.Syllable">
+        <item name="vctr_reaction_background_on">@color/accent_sc_dark_Syllable_dark</item>
+        <item name="colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="android:colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="colorAccentPale">@color/accent_sc_dark_Syllable_pale</item>
+        <item name="bottomSheetDialogTheme">@style/Vector.BottomSheet.SC.Syllable</item>
+        <item name="vctr_presence_indicator_online">?colorAccent</item>
+
+        <item name="sc_message_bg_outgoing">@color/accent_sc_dark_Syllable_alpha25</item>
+    </style>
+
+
+    <style name="AppTheme.SC.Syllable" parent="AppTheme.Base.SC.Syllable" />
+
+    <style name="AppTheme.SC.Dark.Syllable" parent="AppTheme.Base.SC.Dark.Syllable" />
+
+    <style name="AppTheme.SC.Colored.Syllable" parent="AppTheme.Base.SC.Colored.Syllable" />
+
+    <style name="AppTheme.SC.Dark.Colored.Syllable" parent="AppTheme.Base.SC.Dark.Colored.Syllable" />
+
+
+    <style name="AppTheme.AttachmentsPreview.SC.Syllable" parent="AppTheme.Base.SC.Syllable"/>
+
+    <style name="AppTheme.Transparent.SC.Syllable">
+        <item name="vctr_reaction_background_on">@color/accent_sc_dark_Syllable_dark</item>
+        <item name="colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="android:colorAccent">@color/accent_sc_dark_Syllable</item>
+        <item name="colorAccentPale">@color/accent_sc_dark_Syllable_pale</item>
+        <item name="message_highlight_bg_color">@color/accent_sc_dark_Syllable_alpha25</item>
+        <item name="bottomSheetDialogTheme">@style/Vector.BottomSheet.SC.Syllable</item>
+    </style>
+
+</resources>

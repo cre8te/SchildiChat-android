@@ -82,6 +82,7 @@
         <item>@string/sc_accent_teal</item> <!-- Dark Teal name -->
         <item>@string/sc_accent_turquoise</item> <!-- Dark Turquoise name -->
         <item>@string/sc_accent_yellow</item> <!-- Dark Yellow name -->
+        <item>@string/sc_accent_syllable</item> <!-- Dark Yellow name -->
         <!-- do not change this comment for dark accent entry generation -->
     </string-array>
 
@@ -105,6 +106,7 @@
         <item>teal</item> <!-- Dark Teal id -->
         <item>turquoise</item> <!-- Dark Turquoise id -->
         <item>yellow</item> <!-- Dark Yellow id -->
+        <item>syllable</item> <!-- Dark Yellow id -->
         <!-- do not change this comment for dark accent value generation -->
     </string-array>
 
@@ -128,6 +130,7 @@
         <item>#80cbc4</item> <!-- Dark Teal accent -->
         <item>#00C1C1</item> <!-- Dark Turquoise accent -->
         <item>#FBC02D</item> <!-- Dark Yellow accent -->
+        <item>#3E4A66</item> <!-- Dark Syllable accent -->
         <!-- do not change this comment for dark accent preview generation -->
     </string-array>
 
